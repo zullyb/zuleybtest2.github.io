@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zuleyma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0c9df;
+      color: #fff;
+    }
+
+    .container {
+      padding: 10px 10%;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 140px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+    }
+
+    nav ul li a {
+      color: #521994;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background: #cc5799;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+    }
+
+    h2 {
+      color: #861c58;
+    }
+
+    p {
+      color: #861c58;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .header-text {
+      margin-top: 20%;
+      font-size: 30%;
+    }
+
+    .header-text h1 {
+      font-size: 60px;
+      margin-top: 20%;
+      color: #4b16c7;
+    }
+  </style>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="gudu.png" class="logo">
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="container mt-3">
+  <img src="redpants.jpeg" class="mx-auto d-block" style="width:50%">
+  <div class="container mt-3">
+    <h2>About me</h2>
+    <div class="About me">
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="po.webp" alt="Card image" style="width:30%">
+        <div class="card-body">
+          <h4 class="card-title">Zuleyma Baltazar</h4>
+          <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Profile</button>
+          <div id="demo" class="collapse">
+            <p class="card-text">My name is Zuleyma Baltazar, I am studying computer science.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
